@@ -10,8 +10,9 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-
+// Default Route
 Route::get('/', 'OCR\FormOcr@show');
+// Submit Function Route
 Route::post('/getResultOcr', 'OCR\FormOcr@analyze');
 
 
